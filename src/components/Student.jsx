@@ -6,8 +6,8 @@ export default class Student extends Component {
       <div className="content-student">
         <img className="avatar" src={this.props.avatar} />
         <span className="username">{ this.props.username }</span>
-        <span className="lastname">{ this.props.last_name }</span>
-        <span className="firstname">{ this.props.first_name }</span>
+        <span className="lastname">{ this.props.lastName }</span>
+        <span className="firstname">{ this.props.firstName }</span>
         <span className="email">{ this.props.email }</span>
       </div>
     );
