@@ -41,7 +41,7 @@ exports[`renders correctly 1`] = `
       >
         <img
           alt="Photo de profil de mdewaele"
-          src="https://info.bestfriendspetcare.com/hubfs/BestFriendSpetcare-Sep2016/images/img_dog_right-col-top.png?t=1521138713469"
+          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
         />
         <p>
            
@@ -171,6 +171,32 @@ exports[`renders correctly 1`] = `
           >
             (
             antoinesinety
+            )
+          </span>
+        </p>
+      </div>
+    </li>
+    <li
+      className=""
+      onClick={[Function]}
+    >
+      <div
+        className="contact-conv"
+      >
+        <img
+          alt="Photo de profil de Floflo36"
+          src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/31564082_10211602740766358_7499107362326708224_n.jpg?_nc_cat=0&oh=625d3b20b837757df071c3425c13e903&oe=5B506021"
+        />
+        <p>
+          Florian
+           
+          Crétin(ptdr)
+           
+          <span
+            className="username"
+          >
+            (
+            Floflo36
             )
           </span>
         </p>
