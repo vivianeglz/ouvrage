@@ -1,4 +1,5 @@
 import React from 'react';
+import CreateProfil from './components/CreateProfil';
 
 export default class Root extends React.Component {
   constructor () {
@@ -8,7 +9,8 @@ export default class Root extends React.Component {
   render () {
     return (
       <div>
-        <h1>Ouvrage</h1>
+          <h1>Ouvrage</h1>
+          <CreateProfil />
       </div>
     );
   }
