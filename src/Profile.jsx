@@ -33,15 +33,16 @@ export default class Profile extends React.Component {
     console.log('username : ' + username);
     console.log('email : ' + email);
     console.log('birthdate : ' + birthdate);
+    console.log('idStudent : ' + idStudent);
   }
 
   render () {
-    const {id, first_name, last_name, username, email, avatar} = this.props.student;
+    const { id, firstName, lastName, username, email, avatar } = this.props.student;
 
     return (
       <div>
         <div className="wrap-header">
-          <h1 className="title">{first_name} {last_name}</h1>
+          <h1 className="title">{firstName} {lastName}</h1>
           <EditBtn handleClick={this.handleUpdating} />
         </div>
         <div className="wrap-content">
@@ -50,11 +51,11 @@ export default class Profile extends React.Component {
               <input name="id_student" type="hidden" value={id}/>
               <div>
                 <label>Prénom</label>
-                <input type="text" id="first_name" name="first_name" defaultValue={first_name}/>
+                <input type="text" id="first_name" name="first_name" defaultValue={firstName}/>
               </div>
               <div>
                 <label>Nom de famille</label>
-                <input type="text" id="last_name" name="last_name" defaultValue={last_name}/>
+                <input type="text" id="last_name" name="last_name" defaultValue={lastName}/>
               </div>
               <div>
                 <label>Username</label>
@@ -76,7 +77,7 @@ export default class Profile extends React.Component {
                 <img src={avatar} alt="avatar"/>
               </div>
               <div className="content">
-                <p>{first_name}  {last_name}</p>
+                <p>{firstName}  {lastName}</p>
                 <p>{username}</p>
                 <p>{email}</p>
                 <p>{this.state.birthdate}</p>
