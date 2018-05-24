@@ -58,6 +58,7 @@ table {
     box-sizing: border-box;
 }
 
+/* Tags */
 html,
 body {
     width: 100%;
@@ -82,6 +83,19 @@ a:visited {
     color: #061161;
 }
 
+button {
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    border-radius: 20rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #780206;
+    padding: 1rem 3rem;
+}
+
+/* Classes */
 .logo {
     font-size: 4rem;
     font-weight: 900;
@@ -92,8 +106,15 @@ a:visited {
     background: #780206;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: ;
-    padding: 20rem 10rem 0 10rem;
+    padding: 20rem 10rem 2rem 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-header * {
+    margin: 0 2rem;
 }
 
 .title {
@@ -101,7 +122,6 @@ a:visited {
     color: #fff;
     font-size: 5rem;
     font-weight: 900;
-    padding-bottom: 2rem;
 }
 
 .wrap-content {
@@ -123,7 +143,7 @@ a:visited {
 }
 
 .content {
-    padding: 5rem 0;
+    padding: 2rem 0;
     line-height: 2rem;
 }
 .content p {
