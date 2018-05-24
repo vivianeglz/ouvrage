@@ -30,6 +30,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "airtable": "^0.5.6",
     "joi": "^13.2.0",
     "moment": "^2.22.1",
     "react": "^16.3.1",

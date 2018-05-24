@@ -1,10 +1,11 @@
 import React from 'react';
 import Joi from 'joi';
+import base from '../airtable/config';
 
 const schema = {
-  first_name: Joi.string().required(),
+  firstName: Joi.string().required(),
   username: Joi.string().required(),
-  last_name: Joi.string().required(),
+  lastName: Joi.string().required(),
   email: Joi.string().email().required(),
   birthdate: Joi.string().isoDate(),
   avatar: Joi.string()
@@ -40,13 +41,25 @@ export default class CreateProfil extends React.Component {
 
   submit () {
     this.validate()
-    .then((value) => {
-      console.log('Creation profil validé');
-      console.log(value);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+      .then((value) => {
+        console.log(value);
+
+        base('Profil').create({
+          firstName: value.firstName,
+          lastName: value.lastName,
+          username: value.username,
+          email: value.email,
+          birthdate: value.birthdate,
+          avatar: value.avatar
+        }, function (err) {
+          if (err) {
+            console.error(err);
+          }
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
 
   render () {
@@ -56,28 +69,28 @@ export default class CreateProfil extends React.Component {
       <div>
         <form>
           <input name="first_name" type="text" placeholder="Firstname"
-                 value={firstName}
-                 onChange={e => this.handleChange(e, 'firstName')}
+            value={firstName}
+            onChange={e => this.handleChange(e, 'firstName')}
           />
           <input name="username" type="text" placeholder="Username"
-                 value={username}
-                 onChange={e => this.handleChange(e, 'username')}
+            value={username}
+            onChange={e => this.handleChange(e, 'username')}
           />
           <input name="last_name" type="text" placeholder="Lastname"
-                 value={lastName}
-                 onChange={e => this.handleChange(e, 'lastName')}
+            value={lastName}
+            onChange={e => this.handleChange(e, 'lastName')}
           />
           <input name="email" type="email" placeholder="Email"
-                 value={email}
-                 onChange={e => this.handleChange(e, 'email')}
+            value={email}
+            onChange={e => this.handleChange(e, 'email')}
           />
           <input name="birthdate" type="date" placeholder="Birthdate"
-                 value={birthdate}
-                 onChange={e => this.handleChange(e, 'birthdate')}
+            value={birthdate}
+            onChange={e => this.handleChange(e, 'birthdate')}
           />
           <input name="avatar" type="file"
-                 value={avatar}
-                 onChange={e => this.handleChange(e, 'avatar')}
+            value={avatar}
+            onChange={e => this.handleChange(e, 'avatar')}
           />
         </form>
 
