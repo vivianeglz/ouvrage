@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateProfil from './components/createProfil';
+import CreateProfil from './components/CreateProfil';
 
 export default class Root extends React.Component {
     constructor () {

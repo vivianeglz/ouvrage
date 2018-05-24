@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import CreateProfil from './createProfil.js';
+import CreateProfil from './CreateProfil.js';
 
 it('renders correctly', () => {
     const tree = renderer
