@@ -74,6 +74,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     color: #061161;
+    text-indent: .05rem;
 }
 
 a,
@@ -97,6 +98,9 @@ button {
 
 /* Classes */
 .logo {
+    display: block;
+    text-align: center;
+    margin: 1.5rem;
     font-size: 4rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -106,7 +110,7 @@ button {
     background: #780206;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 20rem 10rem 2rem 10rem;
+    padding: 20rem 10rem 7rem 10rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -114,21 +118,22 @@ button {
 }
 
 .wrap-header * {
-    margin: 0 2rem;
+    margin: 1.5rem 2rem;
 }
 
 .title {
     text-align: center;
     color: #fff;
     font-size: 5rem;
+    line-height: 6rem;
     font-weight: 900;
 }
 
 .wrap-content {
-    width: 75%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 10rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
 .avatar {
@@ -143,9 +148,26 @@ button {
 }
 
 .content {
+    width: calc(100% - 25rem);
     padding: 2rem 0;
     line-height: 2rem;
 }
 .content p {
     margin: 1rem 0;
+}
+
+.wrap-input {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem;
+}
+
+.wrap-input label {
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.wrap-input input {
+    padding: .5rem 2rem;
 }
