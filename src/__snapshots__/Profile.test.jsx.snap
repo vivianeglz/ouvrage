@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="wrap-header"
+  >
+    <h1
+      className="title"
+    >
+      Maxence
+       
+      De Waele
+    </h1>
+    <button
+      onClick={[Function]}
+    >
+      Modifier
+    </button>
+  </div>
+  <div
+    className="wrap-content"
+  >
+    <div
+      className="avatar"
+    >
+      <img
+        alt="avatar"
+        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <p>
+        Maxence
+          
+        De Waele
+      </p>
+      <p>
+        mdewaele
+      </p>
+      <p>
+        maxencedewaele@gmail.com
+      </p>
+      <p>
+        2018-05-24
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,3 +1,173 @@
-#root {
-  color: blue;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Tags */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #061161;
+    text-indent: .05rem;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #061161;
+}
+
+button {
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    border-radius: 20rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #780206;
+    padding: 1rem 3rem;
+}
+
+/* Classes */
+.logo {
+    display: block;
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.wrap-header {
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20rem 10rem 7rem 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-header * {
+    margin: 1.5rem 2rem;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 900;
+}
+
+.wrap-content {
+    width: 100%;
+    padding: 0 10rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.avatar {
+    margin-top: -6rem;
+    margin-right: 5rem;
+}
+
+.avatar img {
+    width: 20rem;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.content {
+    width: calc(100% - 25rem);
+    padding: 2rem 0;
+    line-height: 2rem;
+}
+.content p {
+    margin: 1rem 0;
+}
+
+.wrap-input {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem;
+}
+
+.wrap-input label {
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.wrap-input input {
+    padding: .5rem 2rem;
 }
